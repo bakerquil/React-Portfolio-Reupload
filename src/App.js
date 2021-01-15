@@ -1,13 +1,16 @@
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
-import Header from './components/Header/Header';
-import Project from './components/Project/Project'
+import Home from "./components/Pages/Home"
+import About from "./components/Pages/About"
 function App() {
   return (
+    <Router>
     <div>
-    < Header />
-    <Project />
+    <Route exact path="/" component={Home} />
+    <Route exact path="/about" component={About} />
+    
     </div>
+    </Router>
   );
 }
 

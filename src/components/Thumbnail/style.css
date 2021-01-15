@@ -1,8 +1,11 @@
 .project {
-    padding: 20px;
+    padding: 50px;
     object-fit: fill;
 }
-
+.project-title{
+    font-size: larger;
+    font-weight: bold;
+}
 .project-image{
     object-fit: fill;
 }
